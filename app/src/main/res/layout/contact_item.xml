@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="35dp"
+    android:layout_marginBottom="30dp"
+    app:cardBackgroundColor="@color/purple_200"
+    app:cardCornerRadius="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/cat"
+            app:shapeAppearanceOverlay="@style/circleStyle" />
+
+        <TextView
+            android:id="@+id/contactName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="名字"
+            android:textColor="#ffff"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/contactPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="13022225555"
+            android:textColor="#ffff"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/call"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="30dp"
+                app:backgroundTint="#66FFFFFF"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/call"
+                app:iconGravity="textEnd"
+                app:iconSize="25dp"
+                app:iconTint="#373535"
+                app:rippleColor="@color/black" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/sms"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="30dp"
+                app:backgroundTint="#66FFFFFF"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/sms"
+                app:iconGravity="textEnd"
+                app:iconSize="25dp"
+                app:iconTint="#373535"
+                app:rippleColor="@color/black" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="30dp"
+                app:backgroundTint="#66FFFFFF"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/sms"
+                app:iconGravity="textEnd"
+                app:iconSize="25dp"
+                app:iconTint="#373535"
+                app:rippleColor="@color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
